@@ -85,15 +85,8 @@ function letra()
 		
 		fetch(url, {mode: 'no-cors'})
 		.then((resposta) => resposta.json())
-		.then((dados) => {
-			console.error(dados);
-		})
-		.catch((erro) => {
-			console.log(erro);
-		});
-
-		
-		jQuery.getJSON(url,function(data) {
+		.then((data) => {
+			console.log(data);
 			// In case we reach the rate limit, we must ask user to type the captcha
 			if (data.captcha) {
 				var html = '<div id=captcha>Type the 4 numbers bellow<br/>to load this lyrics:<br/>';
@@ -106,9 +99,11 @@ function letra()
 				// What we do with the data
 				jQuery.data(document,art + mus,data); // cache write
 				showLetra(data, art, mus);
-			}
+			}			
+		})
+		.catch((erro) => {
+			console.error(erro);
 		});
-		
 	}
 
 	// Just an example of how you can call this using elements on the page
