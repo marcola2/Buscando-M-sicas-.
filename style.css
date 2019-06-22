@@ -1,0 +1,201 @@
+
+@font-face 
+{
+    font-family: russo_one;
+    src: url('RussoOne-Regular.ttf');
+}
+
+body
+{
+	margin: 0;
+	background-image: url(b.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header
+{
+    background-image: url(background.png);
+	background-color: no-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 42px;
+	margin: 20px;
+}
+
+h1
+{
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+}
+p{
+margin: 0;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+}
+
+nav{
+    display: block;
+	margin: 20px auto;
+	padding: 3px;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	color: darkblue;
+}
+
+main
+{
+	
+	float: center;
+}
+form{
+    flex-direction: center;
+	justify-content: center;
+	margin: 50px;
+}
+
+#bloco-letra
+{
+	padding: 10%;
+	background-color:black;
+	margin: 40px auto;
+	border-radius: 15px;
+    margin-left: auto;
+    /* height: 300px; */
+	margin-left: 85px;
+	margin-right: 85px;
+	margin-top: 40px;
+}
+
+#artista{
+    color: white;
+    font-family: sans-serif;
+}
+
+#music
+{
+	font-family: sans-serif;
+	font-size: 2em;
+    color: white;
+}
+
+.text{
+    color: white;
+}
+
+aside
+{
+	/*width: 20%;
+	background-color: #cce;
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	align-items: center;
+	height: 87vh;
+	/*position: fixed;*/
+}
+
+input[type=text]
+{
+	display: block;
+	margin: 20px auto;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+}
+
+input[type=button]
+{
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: white;
+	color: darkblue;
+}
+
+input[type=button]:hover
+{
+	background-color: dodgerblue;
+	transition: 500ms;
+	color: white;
+}
+
+#aprox 
+{
+	color:black;font-weight:bold;
+	padding:10px 0;
+}
+#captcha
+{
+	padding:10px;
+}
+
+#texto-erro
+{
+	font-family: russo_one;
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	color:rgb(232, 234, 237);
+	font-size: 0.8em;
+	 
+}
+
+nav {
+	height: 80%;
+	margin: 0.4em 0;
+	display: flex;
+	align-items: row;
+}
+
+.f{
+	display: block;
+	margin: 5px auto;
+	padding: 5px;
+	border: none;
+	border-radius: 7px;
+	background-color: blue;
+	color: darkblue;
+
+}
+
+.t{
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: darkblue;
+	color: darkblue;
+}
+
+.i{
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: pink;
+	color: darkblue;
+}
+
+nav a:hover{
+	background-color: dodgerblue;
+	transition: 500ms;
+	color: white;
+
+}
