@@ -72,18 +72,11 @@ function letra()
 			+"&art="+encodeURIComponent(art)
 			+"&mus="+encodeURIComponent(mus);
 
-		// Check if browser supports CORS - https://www.w3.org/TR/cors/
-		// If it does, it's better for caching and avoids captcha.
-		if (!jQuery.support.cors) {
-			url += "&callback=?";
-		}
-
 		if (serial && udig) url += "&serial="+encodeURIComponent(serial)+"&udig="+encodeURIComponent(udig);
-
 
 		console.log(url);
 		
-		fetch(url, {mode: 'no-cors'})
+		fetch(url)
 		.then((resposta) => resposta.json())
 		.then((data) => {
 			console.log(data);
